@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/for-locations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="/js/customSelect.js" async></script>
+    <script src="/js/createLocationPopup.js" async></script>
+    <script src="/js/editLocationPopup.js" async></script>
+    <title>Локации</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="logo">
+                    <img src="./img/logotest.png" alt="logo">
+                </div>
+                <div class="logout__btn">
+                    <button>
+                        <img src="/img/logout.svg" alt="logout">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <nav>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/property.png" alt="property">Имущество
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/inventory.png" alt="inventory">Инвентаризация
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/employees.png" alt="employees">Сотрудники
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/notifications.png" alt="notifications">Уведомления
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn btn--active">
+                    <img src="/img/locations.png" alt="locations">Локации
+                </button>
+            </form>
+            <form action="/settings.html">
+                <button class="nav__btn">
+                    <img src="/img/settings.png" alt="settings">Настройки
+                </button>
+            </form>
+            <form action="">
+                <button class="hide-menu__btn">
+                    <img src="/img/arrow_left.svg" alt="">Скрыть меню
+                </button>
+            </form>
+        </nav>
+        <div class="main__content">
+            <div class="container__main">
+                <h1 class="location__title">
+                    Локации / Все локации
+                </h1>
+                <div class="location__btn-holder">
+                    <div class="btns-holder--actions">
+                        <button class="location__btn btn--active">
+                            Все локации
+                        </button>
+                        <button class="location__btn">
+                            Импорт/Экспорт
+                        </button>
+                        <button class="location__btn">
+                            Настройки
+                        </button>
+                    </div>
+                    <div>
+                        <button class="synchronization__btn">
+                            <img src="/img/synchronization.svg" alt="synchronization">
+                            <h2>синхронизация</h2>
+                            <p>(17.05.2024 15:23:21)</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="create-search--btns__holder">
+                    <div>
+                        <button id="createLocationBtn" class="create-location__btn">
+                            <img src="/img/plus.png" alt="plus"> Создать Локацию
+                        </button>
+                    </div>
+                    <div class="checkbox-search__holder">
+                        <div class="checkbox__holder">
+                            <input type="checkbox" class="custom-checkbox" id="additional-search" name="additional-search" value="yes">
+                            <label for="additional-search">Поиск по точному вхождению</label>
+                        </div>
+                        <div class="custom-search">
+                            <form class="search__content" action="" method="get">
+                                <img src="/img/search.png" alt="search">
+                                <input name="s" placeholder="Поиск" 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-editor">
+                    <div class="location-editor__content">
+                        <ul>
+                            <li>
+                                <div class="li-items__holder">
+                                    <button class="hide__btn"><img src="/img/hide-btn.png" alt=""></button>
+                                    <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                    <h3>Локация 1</h3>
+                                    <p>512</p>
+                                    <div class="editor-btns__holder">
+                                        <button id="editLocationBtn" class="edit__btn">
+                                            <img src="/img/edit-btn.png" alt="">Редактировать
+                                        </button>
+                                        <button class="delete__btn">
+                                            <img src="/img/delete-btn.png" alt="">Удалить
+                                        </button>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="li-items__holder li-subelement__holder">
+                                            <button class="show__btn"><img src="/img/show-btn.png" alt=""></button>
+                                            <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                            <h4>Подотдел 1</h4>
+                                            <p>10</p>
+                                            Для утерь
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li-items__holder li-subelement__holder">
+                                            <button class="hide__btn"><img src="/img/hide-btn.png" alt=""></button>
+                                            <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                            <h4>Подотдел 2</h4>
+                                            <p>100</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="li-items__holder li-subsubelement__holder">
+                                                    <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                                    <h5>Подподотдел 1</h5>
+                                                    <p>2</p>
+                                                    <span class="is-virtual">Виртуальная</span>
+                                                    <span class="is-barcode">Без штрихкода</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="li-items__holder li-subelement__holder">
+                                            <button class="hide__btn"><img src="/img/show-btn.png" alt=""></button>
+                                            <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                            <h4>Подотдел 3</h4>
+                                            <p>400</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="li-items__holder">
+                                    <button class="hide__btn"><img src="/img/show-btn.png" alt=""></button>
+                                    <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                    <h3>Локация 2</h3>
+                                    <p>100</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-items__holder">
+                                    <button class="hide__btn"><img src="/img/show-btn.png" alt=""></button>
+                                    <button class="additional__btn"><img src="/img/additional-btn.png" alt=""></button>
+                                    <h3>Локация 3</h3>
+                                    <p>100</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="popup__create-location" id="popupCreateLocation">
+            <div class="create-location__content">
+                <div class="title__popup">
+                    Создать Локацию
+                </div>
+                <form class="create-location__form" action="">
+                    <input class="create-location__input" type="text" name="location__name" id="location__name" placeholder="Название">
+                    <input class="create-location__input" type="text" name="location__barcode" id="location__barcode" placeholder="Штрихкод">
+                    <input class="create-location__input" type="text" name="location__rfid" id="location__rfid" placeholder="RFID">
+                    <div class="custom-select">
+                        <div class="select-selected"><p>Вложенность</p></div>
+                        <div class="select-items select-hide">
+                            <div>Опция 1</div>
+                            <div>Опция 2</div>
+                            <div>Опция 3</div>
+                        </div>
+                    </div>
+                    <div class="virtual-loc__checkbox">
+                        <div class="virtual-location">Виртуальная локация</div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <div class="toggle-switch-background">
+                                <div class="toggle-switch-handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="virtual-loc__checkbox">
+                        <div class="virtual-location">Локация для утерь</div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <div class="toggle-switch-background">
+                                <div class="toggle-switch-handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-btns__holder">
+                        <button class="save__btn">
+                            <img src="/img/save.png" alt=""> Создать
+                        </button>
+                        <button id="closePopupBtn" class="cancel__btn">
+                            Отменить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="edit-location__popup" id="editLocationPopup">
+            <div class="title__popup">
+                Изменить локацию %название%
+            </div>
+            <div>
+                <form action="">
+                    <label for="edit-location__name">
+                        Название
+                        <input class="edit-location__input" type="text" name="edit-location__name" id="edit-location__name" placeholder="Название">
+                    </label>
+                    <label for="edit-location__barcode">
+                        Штрихкод
+                        <input class="edit-location__input" type="text" name="edit-location__barcode" id="edit-location__barcode" placeholder="Штрихкод">
+                    </label>
+                    <label for="edit-location__rfid">
+                        RFID
+                        <input class="edit-location__input" type="text" name="edit-location__rfid" id="edit-location__rfid" placeholder="RFID">
+                    </label>
+                    <label for="custom-select">
+                        Вложенность
+                        <div class="custom-select">
+                            <div class="select-selected">Локация 1</div>
+                            <div class="select-items select-hide">
+                                <div>Локация 2</div>
+                                <div>Локация 3</div>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="virtual-loc__checkbox">
+                        <div class="virtual-location">Виртуальная локация</div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <div class="toggle-switch-background">
+                                <div class="toggle-switch-handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="virtual-loc__checkbox">
+                        <div class="virtual-location">Локация для утерь</div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <div class="toggle-switch-background">
+                                <div class="toggle-switch-handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-btns__holder">
+                        <button class="save__btn">
+                            <img src="/img/save.png" alt=""> Создать
+                        </button>
+                        <button id="closePopupBtn" class="cancel__btn">
+                            Отменить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <span></span>
+                <div class="data-info">
+                    <span>Последний приём 20.09.2021 18:36:21</span>
+                    <span>Последняя передача  20.09.2021 18:38:21</span>
+                </div>
+                <div class="documentation">
+                    <a href=""><img src="/img/documentation.png" alt=""> Документация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

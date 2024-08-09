@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/for-settings.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Настройки</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="logo">
+                    <img src="./img/logotest.png" alt="logo">
+                </div>
+                <div class="logout__btn">
+                    <button>
+                        <img src="/img/logout.svg" alt="logout">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/property.png" alt="property">Имущество
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/inventory.png" alt="inventory">Инвентаризация
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/employees.png" alt="employees">Сотрудники
+                </button>
+            </form>
+            <form action="">
+                <button class="nav__btn">
+                    <img src="/img/notifications.png" alt="notifications">Уведомления
+                </button>
+            </form>
+            <form action="/locations.html">
+                <button class="nav__btn">
+                    <img src="/img/locations.png" alt="locations">Локации
+                </button>
+            </form>
+            <form action="/settings.html">
+                <button class="nav__btn btn--active">
+                    <img src="/img/settings.png" alt="settings">Настройки
+                </button>
+            </form>
+            <form action="">
+                <button class="hide-menu__btn">
+                    <img src="/img/arrow_left.svg" alt="">Скрыть меню
+                </button>
+            </form>
+        </nav>
+        <div class="main__content">
+            <div class="container__main">
+                <div class="main__title">
+                    Настройки / Локации
+                </div>
+                <div class="settings--btns__holder">
+                    <button>
+                        Имущество
+                    </button>
+                    <button>
+                        Инвентаризация
+                    </button>
+                    <button>
+                        Сотрудники
+                    </button>
+                    <button class="btn--active">
+                        Локации
+                    </button>
+                    <button>
+                        Уведомления
+                    </button>
+                    <button>
+                        Справочники
+                    </button>
+                    <button>
+                        Пользователь
+                    </button>
+                </div>
+                <div class="table__title">
+                    Настройка полей таблицы
+                </div>
+                <div class="main__table">
+                    <table>
+                        <tr>
+                            <th><span></span></th>
+                            <th>Описание</th>
+                            <th>Сортировка</th>
+                            <th>ID</th>
+                            <th>Тип поля</th>
+                            <th>Выводить в таблицу</th>
+                            <th>Обязательно</th>
+                            <th>Удалить</th>
+                        </tr>
+                        <tr class="tr--white">
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Название</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button>
+                                    <img src="/img/help-circle.png" alt="help">
+                                </button>
+                            </td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="500">
+                            </td>
+                            <td>1001</td>
+                            <td>Строка</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="name-isHide" name="name-isHide" value="yes">
+                                    <label for="name-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="name-isImportant" name="name-isImportant" value="yes">
+                                    <label for="name-isImportant"></label>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Цена</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="510">
+                            </td>
+                            <td>1002</td>
+                            <td>Число</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="price-isHide" name="price-isHide" value="yes">
+                                    <label for="price-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="price-isImportant" name="price-isImportant" value="yes">
+                                    <label for="price-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="price-delete" name="price-delete" value="yes">
+                                    <label for="price-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr--white">
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>МОЛ</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="520">
+                            </td>
+                            <td>1003</td>
+                            <td style="display: flex; align-items: center;">Справочник <img src="/img/file.png" alt="file"></td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="mol-isHide" name="mol-isHide" value="yes">
+                                    <label for="mol-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="mol-isImportant" name="mol-isImportant value="yes">
+                                    <label for="mol-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="mol-delete" name="mol-delete" value="yes">
+                                    <label for="mol-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Фото</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="530">
+                            </td>
+                            <td>1004</td>
+                            <td>Файл</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="photo-isHide" name="photo-isHide" value="yes">
+                                    <label for="photo-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="photo-isImportant" name="mol-isImportant" value="yes">
+                                    <label for="mol-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="mol-delete" name="mol-delete" value="yes">
+                                    <label for="mol-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr--white">
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Цвет</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="540">
+                            </td>
+                            <td>1005</td>
+                            <td>Строка</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="color-isHide" name="color-isHide" value="yes">
+                                    <label for="color-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="color-isImportant" name="color-isImportant" value="yes">
+                                    <label for="color-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="color-delete" name="color-delete" value="yes">
+                                    <label for="color-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Локация</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="550">
+                            </td>
+                            <td>1006</td>
+                            <td style="display: flex; align-items: center;">Справочник <img src="/img/file.png" alt="file"></td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="location-isHide" name="location-isHide" value="yes">
+                                    <label for="location-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="location-isImportant" name="location-isImportant" value="yes">
+                                    <label for="location-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="location-delete" name="location-delete" value="yes">
+                                    <label for="location-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr--white">
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Колличество</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="560">
+                            </td>
+                            <td>1007</td>
+                            <td>Число</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="quantity-isHide" name="quantity-isHide" value="yes">
+                                    <label for="quantity-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="quantity-isImportant" name="quantity-isImportant" value="yes">
+                                    <label for="quantity-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="quantity-delete" name="quantity-delete" value="yes">
+                                    <label for="quantity-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Описание</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="570">
+                            </td>
+                            <td>1008</td>
+                            <td>Текст</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="description-isHide" name="description-isHide" value="yes">
+                                    <label for="description-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="description-isImportant" name="description-isImportant" value="yes">
+                                    <label for="description-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="description-delete" name="description-delete" value="yes">
+                                    <label for="description-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr--white">
+                            <td>
+                                <div class="td__holder">
+                                    <button>
+                                        <img src="/img/additional-btn.png" alt="">
+                                    </button>
+                                    <p>Колличество</p>
+                                    <button>
+                                        <img src="/img/edit-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </td>
+                            <td><span></span></td>
+                            <td>
+                                <input type="text" name="sorting" id="sorting" value="580">
+                            </td>
+                            <td>1009</td>
+                            <td>Число</td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="quantity2-isHide" name="quantity2-isHide" value="yes">
+                                    <label for="quantity2-isHide"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="quantity2-isImportant" name="quantity2-isImportant" value="yes">
+                                    <label for="quantity2-isImportant"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox__holder">
+                                    <input type="checkbox" class="custom-checkbox" id="quantity2-delete" name="quantity2-delete" value="yes">
+                                    <label for="quantity2-delete"></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="add-field__btn">
+                        <img src="/img/plus.png" alt="">
+                        <h2>Добавить поле</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__content">
+            <div class="empty__menu">
+            </div>
+            <div class="container__footer">
+                <div class="footer--btns__holder">
+                    <div>
+                        <button class="save__btn">
+                            <img src="/img/save.png" alt=""> 
+                            Сохранить
+                        </button>
+                    </div>
+                    <div>
+                        <button class="cancel__btn">
+                            Отменить
+                        </button>
+                    </div>
+                </div>
+                <div class="documentation">
+                    <a href=""><img src="/img/documentation.png" alt=""> Документация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
